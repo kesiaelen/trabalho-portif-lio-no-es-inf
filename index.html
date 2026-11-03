@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Késia Silva | Enfermagem & Cuidados Humanizados - Laranjeiras do Sul PR</title>
+    
+    <!-- Google Fonts (Plus Jakarta Sans & Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        teal: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            300: '#5eead4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        },
+                        mint: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            500: '#22c55e',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* CSS Personalizado & Efeitos */
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        
+        .gradient-teal {
+            background: linear-gradient(135deg, #0f766e 0%, #0d9488 50%, #2dd4bf 100%);
+        }
+        
+        .gradient-subtle {
+            background: linear-gradient(180deg, #f0fdfa 0%, #ffffff 100%);
+        }
+
+        .gradient-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(240,253,250,0.6) 100%);
+        }
+
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#0d9488 0.5px, transparent 0.5px), radial-gradient(#0d9488 0.5px, #f8fafc 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            background-opacity: 0.05;
+        }
+
+        /* Pulse suave para WhatsApp */
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            50% { transform: scale(1.15); opacity: 0.4; }
+            100% { transform: scale(0.95); opacity: 0.8; }
+        }
+        .pulse-whatsapp {
+            animation: pulse-ring 2.5s infinite ease-in-out;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Késia Silva | Enfermagem & Cuidados Humanizados - Laranjeiras do Sul PR</title>
+    
+    <!-- Google Fonts (Plus Jakarta Sans & Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+…        /* Pulse suave para WhatsApp */
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            50% { transform: scale(1.15); opacity: 0.4; }
+            100% { transform: scale(0.95); opacity: 0.8; }
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0d9488;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #0f766e;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-teal-200 selection:text-teal-900">
+
+    <!-- Top Notice / Localização -->
+    <div class="bg-teal-800 text-teal-100 text-xs py-2 px-4 text-center font-medium tracking-wide flex justify-center items-center gap-2">
+        <i class="fa-solid fa-location-dot text-teal-300"></i>
+        <span>Atendimento & Cuidados de Saúde em <strong>Laranjeiras do Sul - PR</strong> e Região</span>
+    </div>
+
+    <!-- Navegação Principal -->
+    <header class="sticky top-0 z-40 glass-nav border-b border-teal-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo / Nome -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-11 h-11 rounded-xl bg-teal-600 text-white flex items-center justify-center shadow-md shadow-teal-600/30 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-user-nurse text-xl"></i>
+                    </div>
+                    <div>
+                        <span class="block font-bold text-xl text-slate-900 leading-tight">Késia Silva</span>
+                        <span class="block text-xs font-semibold text-teal-600 tracking-wider uppercase">Técnico em Enfermagem</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Links -->
+                <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
+                    <a href="#sobre" class="hover:text-teal-600 transition-colors">Sobre Mim</a>
+                    <a href="#servicos" class="hover:text-teal-600 transition-colors">Serviços</a>
+                    <a href="#formacao" class="hover:text-teal-600 transition-colors">Formação</a>
+                    <a href="#redes" class="hover:text-teal-600 transition-colors">Redes Sociais</a>
+                    <a href="#contato" class="hover:text-teal-600 transition-colors">Contato</a>
+                </nav>
+
+                <!-- CTA WhatsApp Header -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://wa.me/5542999999999?text=Olá%20Késia,%20gostaria%20de%20informações%20sobre%20seus%20serviços%20de%20saúde!" target="_blank" class="bg-teal-600 hover:bg-teal-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md shadow-teal-600/20 hover:shadow-lg transition-all flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Falar no WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Botão Menu Mobile -->
+                <button id="mobile-menu-btn" class="md:hidden text-slate-700 hover:text-teal-600 p-2 focus:outline-none" aria-label="Abrir Menu">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Dropping -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-6 space-y-3">
+            <a href="#sobre" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-teal-50 hover:text-teal-700">Sobre Mim</a>
+            <a href="#servicos" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-teal-50 hover:text-teal-700">Serviços</a>
+            <a href="#formacao" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-teal-50 hover:text-teal-700">Formação</a>
+            <a href="#redes" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-teal-50 hover:text-teal-700">Redes Sociais</a>
+            <a href="#contato" class="mobile-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-teal-50 hover:text-teal-700">Contato</a>
+            <a href="https://wa.me/5542999999999?text=Olá%20Késia,%20gostaria%20de%20informações!" target="_blank" class="block w-full text-center bg-teal-600 text-white py-3 rounded-xl font-semibold mt-4 shadow-md">
+                <i class="fa-brands fa-whatsapp mr-2"></i> Solicitar Atendimento
+            </a>
+        </div>
+    </header>
+
+    <!-- Section HERO -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden bg-gradient-to-b from-teal-50/70 via-white to-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Coluna de Texto Hero -->
+                <div class="lg:col-span-7 text-center lg:text-left">
+                    
+                    <!-- Tag Badge -->
+                    <div class="inline-flex items-center gap-2 bg-teal-100/80 border border-teal-200 text-teal-800 text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+                        <span class="w-2 h-2 rounded-full bg-teal-500 animate-ping"></span>
+                        <span>Disponível para Cuidados & Estágios Práticos</span>
+                    </div>
+
+                    <!-- Título Principal -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight tracking-tight mb-6">
+                        Cuidado Humanizado & <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-teal-800">Atenção Integral</span> à Sua Saúde.
+                    </h1>
+
+                    <p class="text-lg text-slate-600 mb-8 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Olá! Sou <strong>Késia Silva</strong>, estudante dedicada do curso <strong>Técnico em Enfermagem</strong> em <strong>Laranjeiras do Sul - PR</strong>. Prestação de serviços de apoio à saúde, cuidados domicilires e acompanhamento humanizado com ética e responsabilidade.
+                    </p>
+
+                    <!-- Botões de Ação -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-10">
+                        <a href="#contato" class="w-full sm:w-auto bg-teal-600 hover:bg-teal-700 text-white font-semibold px-8 py-4 rounded-xl shadow-lg shadow-teal-600/25 hover:shadow-teal-600/40 transition-all flex items-center justify-center gap-3 text-base">
+                            <i class="fa-regular fa-calendar-check text-lg"></i>
+                            <span>Solicitar Atendimento</span>
+                        </a>
+                        <a href="#servicos" class="w-full sm:w-auto bg-white hover:bg-slate-100 text-slate-700 border border-slate-200 font-semibold px-7 py-4 rounded-xl transition-all flex items-center justify-center gap-2 text-base">
+                            <i class="fa-solid fa-heart-pulse text-teal-600"></i>
+                            <span>Conhecer Serviços</span>
+                        </a>
+                    </div>
+
+                    <!-- Destaque Redes Sociais Rápidas -->
+                    <div class="pt-6 border-t border-slate-200/80 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-sm text-slate-500">
+                        <span class="font-medium text-slate-700">Acompanhe meu trabalho:</span>
+                        <a href="https://instagram.com/kesia.silvv" target="_blank" class="flex items-center gap-2 text-slate-600 hover:text-pink-600 transition-colors font-medium">
+                            <i class="fa-brands fa-instagram text-lg text-pink-500"></i>
+                            <span>@kesia.silvv</span>
+                        </a>
+                        <a href="https://tiktok.com/@kesia.silvv" target="_blank" class="flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-colors font-medium">
+                            <i class="fa-brands fa-tiktok text-lg text-slate-900"></i>
+                            <span>@kesia.silvv</span>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Coluna Card / Avatar Profissional -->
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md">
+                        <!-- Background Glow decorative -->
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-teal-400 to-emerald-400 rounded-3xl blur-xl opacity-30 group-hover:opacity-100 transition duration-1000"></div>
+                        
+                        <!-- Main Photo/Graphic Container -->
+                        <div class="relative bg-white rounded-3xl p-6 shadow-2xl border border-slate-100">
+                            <div class="relative aspect-[4/5] rounded-2xl overflow-hidden bg-slate-100 mb-6 flex flex-col items-center justify-center text-center p-6 border border-teal-50">
+                                <!-- Vector Illustration / Placeholder Avatar profissional de enfermagem -->
+                                <div class="w-32 h-32 rounded-full bg-teal-100 text-teal-600 flex items-center justify-center mb-4 shadow-inner">
+                                    <i class="fa-solid fa-user-nurse text-6xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-slate-800 mb-1">Késia Silva</h3>
+                                <p class="text-sm font-semibold text-teal-600 bg-teal-50 px-3 py-1 rounded-full border border-teal-100">
+                                    Enfermagem & Saúde
+                                </p>
+                                <p class="text-xs text-slate-500 mt-3 max-w-xs">
+                                    "Dedicação em aprender e servir a comunidade de Laranjeiras do Sul com amor e profissionalismo."
+                                </p>
+                            </div>
+
+                            <!-- Highlights Flutuantes no Card -->
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="bg-teal-50/80 p-3 rounded-xl border border-teal-100/60 flex items-center gap-3">
+                                    <div class="w-9 h-9 rounded-lg bg-teal-600 text-white flex items-center justify-center font-bold text-sm">
+                                        <i class="fa-solid fa-hand-holding-heart"></i>
+                                    </div>
+                                    <div>
+                                        <span class="block text-xs text-slate-500">Compromisso</span>
+                                        <span class="block text-xs font-bold text-slate-800">Humanizado</span>
+                                    </div>
+                                </div>
+                                <div class="bg-teal-50/80 p-3 rounded-xl border border-teal-100/60 flex items-center gap-3">
+                                    <div class="w-9 h-9 rounded-lg bg-teal-600 text-white flex items-center justify-center font-bold text-sm">
+                                        <i class="fa-solid fa-map-pin"></i>
+                                    </div>
+                                    <div>
+                                        <span class="block text-xs text-slate-500">Cidade</span>
+                                        <span class="block text-xs font-bold text-slate-800">Laranjeiras PR</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Metric Counter Section -->
+    <section class="py-10 bg-teal-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-teal-300 mb-1 flex justify-center items-center gap-1">
+                        <span class="counter" data-target="100">0</span>%
+                    </div>
+                    <div class="text-xs sm:text-sm font-medium text-teal-100">Dedicação ao Paciente</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-teal-300 mb-1 flex justify-center items-center gap-1">
+                        +<span class="counter" data-target="400">0</span>h
+                    </div>
+                    <div class="text-xs sm:text-sm font-medium text-teal-100">Práticas e Estágios</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-teal-300 mb-1 flex justify-center items-center gap-1">
+                        <span class="counter" data-target="24">0</span>/7
+                    </div>
+                    <div class="text-xs sm:text-sm font-medium text-teal-100">Atenção & Cuidado</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-3xl sm:text-4xl font-extrabold text-teal-300 mb-1 flex justify-center items-center gap-1">
+                        <span class="counter" data-target="100">0</span>%
+                    </div>
+                    <div class="text-xs sm:text-sm font-medium text-teal-100">Ética e Biossegurança</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section SOBRE MIM -->
+    <section id="sobre" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Imagem/Ilustração -->
+                <div class="lg:col-span-5 order-2 lg:order-1">
+                    <div class="relative">
+                        <div class="bg-gradient-to-tr from-teal-500 to-teal-700 rounded-3xl p-1 shadow-xl">
+                            <div class="bg-white rounded-[22px] p-8 space-y-6">
+                                <div class="flex items-center gap-4 border-b border-slate-100 pb-4">
+                                    <div class="w-12 h-12 rounded-full bg-teal-100 text-teal-600 flex items-center justify-center text-xl">
+                                        <i class="fa-solid fa-notes-medical"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-800">Perfil Profissional</h4>
+                                        <p class="text-xs text-slate-500">Técnico em Enfermagem em Formação</p>
+                                    </div>
+                                </div>
+
+                                <ul class="space-y-4 text-sm text-slate-600">
+                                    <li class="flex items-start gap-3">
+                                        <i class="fa-solid fa-circle-check text-teal-600 mt-1"></i>
+                                        <span>Foco em acolhimento humanizado e escuta ativa dos pacientes.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <i class="fa-solid fa-circle-check text-teal-600 mt-1"></i>
+                                        <span>Rigorosa aplicação das normas de biossegurança e higiene.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <i class="fa-solid fa-circle-check text-teal-600 mt-1"></i>
+                                        <span>Residência e atuação técnica em <strong>Laranjeiras do Sul - PR</strong>.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <i class="fa-solid fa-circle-check text-teal-600 mt-1"></i>
+                                        <span>Constante atualização técnica e aprendizado prático continuado.</span>
+                                    </li>
+                                </ul>
+
+                                <div class="p-4 bg-teal-50 rounded-xl border border-teal-100 text-xs text-teal-800">
+                                    <i class="fa-solid fa-quote-left text-teal-400 text-lg block mb-1"></i>
+                                    "A enfermagem é a arte de cuidar com conhecimento técnico, sensibilidade e respeito ao próximo em cada detalhe."
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conteúdo Sobre -->
+                <div class="lg:col-span-7 order-1 lg:order-2">
+                    <span class="text-teal-600 text-sm font-bold uppercase tracking-wider block mb-2">Sobre Mim</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-6 leading-tight">
+                        Vocação para cuidar e paixão pela área da saúde
+                    </h2>
+                    
+                    <div class="space-y-4 text-slate-600 text-base leading-relaxed">
+                        <p>
+                            Meu nome é <strong>Késia Silva</strong>. Sou estudante da área da saúde, cursando o <strong>Técnico em Enfermagem</strong> com muito orgulho na cidade de <strong>Laranjeiras do Sul - Paraná</strong>.
+                        </p>
+                        <p>
+                            Minha jornada na área da saúde é impulsionada pela empatia e pela vontade constante de proporcionar bem-estar, suporte e alívio a quem necessita. Acredito que o cuidado vai muito além dos procedimentos técnicos: ele envolve a presença atenciosa, o respeito à dignidade humana e o carinho no atendimento familiar.
+                        </p>
+                        <p>
+                            Estou continuamente aprimorando minhas competências em aferição de sinais vitais, curativos simples, rotina de medicação supervisionada, auxílio à mobilidade e cuidados específicos para idosos e acamados.
+                        </p>
+                    </div>
+
+                    <!-- PONTOS FORTE DE VALORES -->
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8 pt-6 border-t border-slate-100">
+                        <div class="text-left">
+                            <i class="fa-solid fa-heart text-teal-600 text-xl mb-2"></i>
+                            <h4 class="font-bold text-slate-800 text-sm">Empatia</h4>
+                            <p class="text-xs text-slate-500">Acolhimento com sensibilidade e respeito.</p>
+                        </div>
+                        <div class="text-left">
+                            <i class="fa-solid fa-shield-halved text-teal-600 text-xl mb-2"></i>
+                            <h4 class="font-bold text-slate-800 text-sm">Ética e Segurança</h4>
+                            <p class="text-xs text-slate-500">Respeito rigoroso aos protocolos de saúde.</p>
+                        </div>
+                        <div class="text-left">
+                            <i class="fa-solid fa-graduation-cap text-teal-600 text-xl mb-2"></i>
+                            <h4 class="font-bold text-slate-800 text-sm">Evolução Contínua</h4>
+                            <p class="text-xs text-slate-500">Estudo constante e aperfeiçoamento.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section SERVIÇOS E ESPECIALIDADES -->
+    <section id="servicos" class="py-20 bg-slate-50 border-t border-b border-slate-200/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-teal-600 text-sm font-bold uppercase tracking-wider block mb-2">Área de Atuação</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Serviços e Cuidados prestados</h2>
+                <p class="text-slate-600">
+                    Confira as atividades de auxílio à saúde e cuidados domiciliares disponibilizados com técnica e humanização em Laranjeiras do Sul.
+                </p>
+
+                <!-- Filtros de Serviços -->
+                <div class="flex flex-wrap justify-center gap-2 mt-8" id="filter-buttons">
+                    <button data-filter="todos" class="filter-btn active bg-teal-600 text-white text-xs sm:text-sm font-semibold px-5 py-2 rounded-full transition-all shadow-sm">
+                        Todos os Serviços
+                    </button>
+                    <button data-filter="domiciliar" class="filter-btn bg-white hover:bg-teal-50 text-slate-700 hover:text-teal-700 text-xs sm:text-sm font-semibold px-5 py-2 rounded-full transition-all border border-slate-200">
+                        Home Care & Domiciliar
+                    </button>
+                    <button data-filter="procedimentos" class="filter-btn bg-white hover:bg-teal-50 text-slate-700 hover:text-teal-700 text-xs sm:text-sm font-semibold px-5 py-2 rounded-full transition-all border border-slate-200">
+                        Procedimentos Básicos
+                    </button>
+                    <button data-filter="orientacao" class="filter-btn bg-white hover:bg-teal-50 text-slate-700 hover:text-teal-700 text-xs sm:text-sm font-semibold px-5 py-2 rounded-full transition-all border border-slate-200">
+                        Prevenção & Orientação
+                    </button>
+                </div>
+            </div>
+
+            <!-- Grid de Cards de Serviços -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="services-grid">
+                
+                <!-- Card 1 -->
+                <div class="service-card bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-category="procedimentos">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center text-2xl mb-6 border border-teal-100">
+                        <i class="fa-solid fa-stethoscope"></i>
+                    </div>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 bg-teal-50 px-2.5 py-1 rounded-md">Procedimentos</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-3 mb-3">Aferição de Sinais Vitais</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Monitoramento preciso de Pressão Arterial (PA), Glicemia Capilar (HGT), Frequência Cardíaca, Saturação de Oxigênio e Temperatura.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-500"></i> Registro e histórico de medições</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-500"></i> Relatório para o médico acompanhante</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="service-card bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-category="domiciliar">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center text-2xl mb-6 border border-teal-100">
+                        <i class="fa-solid fa-house-medical"></i>
+                    </div>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 bg-teal-50 px-2.5 py-1 rounded-md">Home Care</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-3 mb-3">Cuidados Domiciliares</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Apoio no conforto do lar para pessoas em recuperação cirúrgica, acamados ou com mobilidade reduzida.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-500"></i> Auxílio no banho e higiene pessoal</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-500"></i> Mudança de decúbito (prevenção de lesões)</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="service-card bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-category="domiciliar">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center text-2xl mb-6 border border-teal-100">
+                        <i class="fa-solid fa-user-clock"></i>
+                    </div>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 bg-teal-50 px-2.5 py-1 rounded-md">Acompanhamento</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-3 mb-3">Acompanhamento de Pacientes & Idosos</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Companhia atenciosa e segura para idosos, auxílio na rotina de medicação prescrita e acompanhamento em consultas.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-500"></i> Organização e lembrete de horários de remédios</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-500"></i> Estímulo à mobilidade leve e bem-estar</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="service-card bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-category="procedimentos">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center text-2xl mb-6 border border-teal-100">
+                        <i class="fa-solid fa-bandage"></i>
+                    </div>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 bg-teal-50 px-2.5 py-1 rounded-md">Procedimentos</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-3 mb-3">Curativos Simples & Higienização</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Troca de curativos em lesões superficiais, incisões limpas e curativos pós-operatórios com técnica asséptica.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-500"></i> Técnica asséptica e segura</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-500"></i> Proteção contra infecções cruzadas</li>
+                    </ul>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="service-card bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-category="orientacao">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center text-2xl mb-6 border border-teal-100">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 bg-teal-50 px-2.5 py-1 rounded-md">Prevenção</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-3 mb-3">Orientação em Saúde & Autocuidado</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Instrução clara para famílias e pacientes sobre prevenção de quedas, hábitos saudáveis e cuidados pós-alta hospitalar.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-500"></i> Orientação para familiares cuidares</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-500"></i> Dicas para adaptação do ambiente residencial</li>
+                    </ul>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="service-card bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-xl hover:-translate-y-1 transition-all duration-300" data-category="procedimentos">
+                    <div class="w-14 h-14 rounded-2xl bg-teal-50 text-teal-600 flex items-center justify-center text-2xl mb-6 border border-teal-100">
+                        <i class="fa-solid fa-kit-medical"></i>
+                    </div>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-teal-600 bg-teal-50 px-2.5 py-1 rounded-md">Suporte</span>
+                    <h3 class="text-xl font-bold text-slate-900 mt-3 mb-3">Primeiros Socorros & Triagem</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                        Suporte básico de vida, primeiros atendimentos de urgência leve e orientação sobre quando buscar atendimento hospitalar urgente.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t border-slate-100 pt-4">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-500"></i> Calma e protocolo de segurança</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-teal-500"></i> Avaliação rápida de sintomas</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section FORMAÇÃO E QUALIFICAÇÕES (TIMELINE) -->
+    <section id="formacao" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-teal-600 text-sm font-bold uppercase tracking-wider block mb-2">Trajetória Acadêmica</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Formação & Qualificações</h2>
+                <p class="text-slate-600">
+                    Construindo uma base sólida baseada no estudo contínuo, práticas supervisionadas e compromisso com a ciência da saúde.
+                </p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="max-w-4xl mx-auto relative border-l-2 border-teal-200 pl-6 sm:pl-10 space-y-12">
+                
+                <!-- Item Timeline 1 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[47px] top-0 w-8 h-8 rounded-full bg-teal-600 text-white flex items-center justify-center text-sm shadow-md ring-4 ring-white">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-100 hover:border-teal-200 transition-all">
+                        <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full">Em Andamento</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-3 mb-1">Curso Técnico em Enfermagem</h3>
+                        <p class="text-sm font-medium text-slate-500 mb-4">Laranjeiras do Sul - PR</p>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Formação focada em Anatomia, Fisiologia, Farmacologia Básica, Procedimentos de Enfermagem, Saúde Coletiva e Humanização no Atendimento ao Paciente.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item Timeline 2 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[47px] top-0 w-8 h-8 rounded-full bg-teal-600 text-white flex items-center justify-center text-sm shadow-md ring-4 ring-white">
+                        <i class="fa-solid fa-user-nurse"></i>
+                    </div>
+                    <div class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-100 hover:border-teal-200 transition-all">
+                        <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full">Prática Supervisionada</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-3 mb-1">Estágios Práticos de Enfermagem</h3>
+                        <p class="text-sm font-medium text-slate-500 mb-4">Unidades de Saúde e Ambientes Clínicos</p>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Vivência direta no atendimento a pacientes, aferição de sinais vitais, curativos, rotinas de biossegurança e assistência em cuidados de média complexidade.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item Timeline 3 -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] sm:-left-[47px] top-0 w-8 h-8 rounded-full bg-teal-600 text-white flex items-center justify-center text-sm shadow-md ring-4 ring-white">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div class="bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-100 hover:border-teal-200 transition-all">
+                        <span class="text-xs font-bold text-teal-700 bg-teal-100 px-3 py-1 rounded-full">Certificações de Apoio</span>
+                        <h3 class="text-xl font-bold text-slate-900 mt-3 mb-1">Biossegurança & Primeiros Socorros</h3>
+                        <p class="text-sm font-medium text-slate-500 mb-4">Capacitações Complementares</p>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Treinamento focado no controle de contaminação, higienização rigorosa de mãos, uso adequado de EPIs e atendimento primário em momentos de urgência.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section REDES SOCIAIS E MÍDIA -->
+    <section id="redes" class="py-20 bg-gradient-to-b from-slate-900 to-teal-950 text-white relative overflow-hidden">
+        
+        <!-- Decorative Glow Blur background -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-teal-400 text-sm font-bold uppercase tracking-wider block mb-2">Conecte-se Comigo</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">Acompanhe meu Conteúdo e Rotina</h2>
+                <p class="text-teal-100/80">
+                    Siga minhas redes sociais para acompanhar dicas de saúde, bastidores dos estudos em Enfermagem e conteúdos educativos sobre cuidados diários!
+                </p>
+            </div>
+
+            <!-- Cards de Redes Sociais -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                
+                <!-- Instagram Card -->
+                <div class="bg-white/5 border border-white/10 hover:border-pink-500/50 rounded-3xl p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 flex items-center justify-center text-white text-3xl shadow-lg">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <span class="text-xs font-semibold bg-pink-500/20 text-pink-300 border border-pink-500/30 px-3 py-1 rounded-full">
+                                Feed & Stories
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-1">Instagram</h3>
+                        <p class="text-pink-400 font-semibold text-sm mb-4">@kesia.silvv</p>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Dicas diárias sobre saúde, rotina do curso técnico de enfermagem, postagens motivacionais e novidades sobre atendimento.
+                        </p>
+                    </div>
+
+                    <a href="https://instagram.com/kesia.silvv" target="_blank" class="w-full bg-gradient-to-r from-rose-500 to-purple-600 hover:from-rose-600 hover:to-purple-700 text-white font-semibold py-3.5 px-6 rounded-xl text-center shadow-lg transition-all flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-instagram text-lg"></i>
+                        <span>Seguir no Instagram</span>
+                    </a>
+                </div>
+
+                <!-- TikTok Card -->
+                <div class="bg-white/5 border border-white/10 hover:border-teal-400/50 rounded-3xl p-8 backdrop-blur-md transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div>
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="w-14 h-14 rounded-2xl bg-slate-900 border border-slate-700 flex items-center justify-center text-white text-3xl shadow-lg">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </div>
+                            <span class="text-xs font-semibold bg-teal-500/20 text-teal-300 border border-teal-500/30 px-3 py-1 rounded-full">
+                                Vídeos & Dicas
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-1">TikTok</h3>
+                        <p class="text-teal-400 font-semibold text-sm mb-4">@kesia.silvv</p>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                            Vídeos dinâmicos sobre estudos na área da saúde, curiosidades de enfermagem e divulgação de trabalho humanizado.
+                        </p>
+                    </div>
+
+                    <a href="https://tiktok.com/@kesia.silvv" target="_blank" class="w-full bg-slate-800 hover:bg-slate-700 border border-slate-600 text-white font-semibold py-3.5 px-6 rounded-xl text-center shadow-lg transition-all flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-tiktok text-lg"></i>
+                        <span>Seguir no TikTok</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section DEPOIMENTOS & DIFERENCIAIS -->
+    <section class="py-20 bg-teal-50/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-teal-600 text-sm font-bold uppercase tracking-wider block mb-2">Por que escolher meu atendimento?</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mb-4">Diferenciais do Cuidado</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center">
+                    <div class="w-12 h-12 rounded-full bg-teal-100 text-teal-600 mx-auto flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-handshake-angle"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">Pontualidade & Respeito</h3>
+                    <p class="text-sm text-slate-600">Compromisso rigoroso com os horários e combinados junto às famílias assistidas.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center">
+                    <div class="w-12 h-12 rounded-full bg-teal-100 text-teal-600 mx-auto flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">Atendimento Humanizado</h3>
+                    <p class="text-sm text-slate-600">Carinho, paciência e empatia em cada interação e cuidado diário com os pacientes.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 text-center">
+                    <div class="w-12 h-12 rounded-full bg-teal-100 text-teal-600 mx-auto flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-900 mb-2">Local em Laranjeiras do Sul</h3>
+                    <p class="text-sm text-slate-600">Agilidade e facilidade de deslocamento atendendo na cidade de Laranjeiras do Sul - PR.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section CONTATO / ORÇAMENTO -->
+    <section id="contato" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                
+                <!-- Info de Contato -->
+                <div class="lg:col-span-5 space-y-8">
+                    <div>
+                        <span class="text-teal-600 text-sm font-bold uppercase tracking-wider block mb-2">Fale Comigo</span>
+                        <h2 class="text-3xl font-extrabold text-slate-900 mb-4">Entre em contato para agendar ou tirar dúvidas</h2>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Precisa de auxílio com aferição de sinais vitais, acompanhamento de idosos ou cuidados domiciliares em Laranjeiras do Sul? Envie uma mensagem!
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-xl shrink-0 border border-teal-100">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-base">Localização</h4>
+                                <p class="text-sm text-slate-600">Laranjeiras do Sul - Paraná (PR)</p>
+                                <p class="text-xs text-slate-400 mt-0.5">Atendimento residencial e suporte local</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-xl shrink-0 border border-teal-100">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-base">WhatsApp Direto</h4>
+                                <p class="text-sm text-slate-600">Clique para enviar uma mensagem instantânea</p>
+                                <a href="https://wa.me/5542999999999?text=Olá%20Késia,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!" target="_blank" class="text-xs font-semibold text-teal-600 hover:text-teal-700 underline mt-1 inline-block">
+                                    Iniciar conversa no WhatsApp &rarr;
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-xl shrink-0 border border-teal-100">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-800 text-base">Redes Sociais Oficiais</h4>
+                                <div class="flex gap-4 mt-2">
+                                    <a href="https://instagram.com/kesia.silvv" target="_blank" class="w-9 h-9 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center hover:bg-pink-600 hover:text-white transition-colors">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="https://tiktok.com/@kesia.silvv" target="_blank" class="w-9 h-9 rounded-full bg-slate-100 text-slate-800 flex items-center justify-center hover:bg-slate-900 hover:text-white transition-colors">
+                                        <i class="fa-brands fa-tiktok"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card Informativo Laranjeiras -->
+                    <div class="p-6 bg-gradient-to-r from-teal-600 to-teal-700 rounded-2xl text-white shadow-lg">
+                        <h4 class="font-bold text-lg mb-2"><i class="fa-solid fa-hospital-user mr-2"></i> Atendimento em Laranjeiras do Sul</h4>
+                        <p class="text-xs text-teal-100 leading-relaxed">
+                            Disponibilidade para agendamentos prévios de turnos de acompanhamento e suporte de enfermagem.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Formulário Interativo -->
+                <div class="lg:col-span-7">
+                    <div class="bg-slate-50 p-8 sm:p-10 rounded-3xl border border-slate-200/80 shadow-sm">
+                        <h3 class="text-2xl font-bold text-slate-900 mb-2">Envie uma Mensagem</h3>
+                        <p class="text-xs text-slate-500 mb-6">Preencha os campos abaixo para solicitar orçamento ou tirar dúvidas sobre o atendimento.</p>
+
+                        <form id="contact-form" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="name" class="block text-xs font-semibold text-slate-700 uppercase mb-1">Seu Nome *</label>
+                                    <input type="text" id="name" required placeholder="Ex: Maria Oliveira" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white text-sm">
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-xs font-semibold text-slate-700 uppercase mb-1">Telefone / WhatsApp *</label>
+                                    <input type="tel" id="phone" required placeholder="(42) 99999-9999" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="service-type" class="block text-xs font-semibold text-slate-700 uppercase mb-1">Serviço de Interesse</label>
+                                <select id="service-type" class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white text-sm text-slate-700">
+                                    <option value="Aferição de Sinais Vitais">Aferição de Sinais Vitais</option>
+                                    <option value="Cuidados Domiciliares / Home Care">Cuidados Domiciliares / Home Care</option>
+                                    <option value="Acompanhamento de Pacientes / Idosos">Acompanhamento de Idosos/Pacientes</option>
+                                    <option value="Curativos & Higiene">Curativos & Higiene</option>
+                                    <option value="Outros Serviços / Dúvidas">Outros Serviços / Dúvidas</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-xs font-semibold text-slate-700 uppercase mb-1">Detalhes do Atendimento / Mensagem</label>
+                                <textarea id="message" rows="4" placeholder="Descreva brevemente como posso ajudar ou o horário de preferência..." class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-teal-500 bg-white text-sm"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-4 rounded-xl shadow-lg shadow-teal-600/20 hover:shadow-teal-600/40 transition-all flex items-center justify-center gap-2 text-base">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                <span>Enviar Mensagem via WhatsApp</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 border-b border-slate-800 pb-8 mb-8">
+                
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-teal-600 text-white flex items-center justify-center">
+                        <i class="fa-solid fa-user-nurse text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="block font-bold text-white text-lg">Késia Silva</span>
+                        <span class="block text-xs text-teal-400">Técnico em Enfermagem &bull; Laranjeiras do Sul - PR</span>
+                    </div>
+                </div>
+
+                <!-- Redes sociais footer -->
+                <div class="flex items-center gap-6">
+                    <a href="https://instagram.com/kesia.silvv" target="_blank" class="text-slate-400 hover:text-pink-400 text-xl transition-colors">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://tiktok.com/@kesia.silvv" target="_blank" class="text-slate-400 hover:text-white text-xl transition-colors">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    <a href="https://wa.me/5542999999999" target="_blank" class="text-slate-400 hover:text-teal-400 text-xl transition-colors">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+                <p>&copy; <span id="year"></span> Késia Silva. Todos os direitos reservados. Laranjeiras do Sul - PR.</p>
+                <p class="flex items-center gap-1">
+                    Desenvolvido para divulgação de serviços de saúde com <i class="fa-solid fa-heart text-rose-500"></i>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante de WhatsApp -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <div class="relative">
+            <span class="absolute -inset-2 rounded-full bg-emerald-500 opacity-75 pulse-whatsapp"></span>
+            <a href="https://wa.me/5542999999999?text=Olá%20Késia!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20informações." target="_blank" aria-label="Falar no WhatsApp" class="relative w-14 h-14 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full flex items-center justify-center text-3xl shadow-xl transition-transform hover:scale-110">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Modal Customizado de Confirmação (Sem usar alert) -->
+    <div id="custom-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl p-8 max-w-md w-full shadow-2xl text-center transform transition-all">
+            <div class="w-16 h-16 bg-teal-100 text-teal-600 rounded-full flex items-center justify-center text-3xl mx-auto mb-4">
+                <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">Mensagem Preparada!</h3>
+            <p class="text-slate-600 text-sm mb-6" id="modal-text">
+                Você será redirecionado ao WhatsApp da Késia Silva para enviar suas informações.
+            </p>
+            <button id="close-modal-btn" class="w-full bg-teal-600 hover:bg-teal-700 text-white font-bold py-3.5 rounded-xl transition-all">
+                Continuar para WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- Scripts JavaScript -->
+    <script>
+        // Atualiza Ano no Footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Toggle Menu Mobile
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Filtro de Serviços Interativo
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const serviceCards = document.querySelectorAll('.service-card');
+
+        filterButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // remove active class from all
+                filterButtons.forEach(b => {
+                    b.classList.remove('active', 'bg-teal-600', 'text-white');
+                    b.classList.add('bg-white', 'text-slate-700');
+                });
+                // add active class to clicked
+                btn.classList.add('active', 'bg-teal-600', 'text-white');
+                btn.classList.remove('bg-white', 'text-slate-700');
+
+                const filter = btn.getAttribute('data-filter');
+
+                serviceCards.forEach(card => {
+                    if (filter === 'todos' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Counter Animation
+        const counters = document.querySelectorAll('.counter');
+        let animated = false;
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const target = +counter.getAttribute('data-target');
+                let count = 0;
+                const speed = target / 50;
+
+                const updateCount = () => {
+                    count += speed;
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count);
+                        setTimeout(updateCount, 30);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+            });
+        };
+
+        window.addEventListener('scroll', () => {
+            const counterSection = document.querySelector('.counter');
+            if(counterSection && !animated) {
+                const pos = counterSection.getBoundingClientRect().top;
+                if(pos < window.innerHeight - 100) {
+                    animateCounters();
+                    animated = true;
+                }
+            }
+        });
+
+        // Formulário de Contato -> Redirecionamento seguro para WhatsApp
+        const contactForm = document.getElementById('contact-form');
+        const modal = document.getElementById('custom-modal');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+        let pendingWhatsappUrl = '';
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service-type').value;
+            const message = document.getElementById('message').value;
+
+            const textMessage = `Olá Késia! Meu nome é ${encodeURIComponent(name)} (${encodeURIComponent(phone)}).\n` +
+                                `Gostaria de informações sobre: *${encodeURIComponent(service)}*.\n` +
+                                (message ? `Detalhes: ${encodeURIComponent(message)}` : '');
+
+            // WhatsApp number placeholder (Laranjeiras do Sul - PR code 42)
+            pendingWhatsappUrl = `https://wa.me/5542999999999?text=${textMessage}`;
+
+            // Exibir modal customizado
+            modal.classList.remove('hidden');
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+            if (pendingWhatsappUrl) {
+                window.open(pendingWhatsappUrl, '_blank');
+            }
+        });
+    </script>
+</body>
+</html>
